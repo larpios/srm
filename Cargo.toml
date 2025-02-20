@@ -4,8 +4,12 @@ version = "0.1.2"
 edition = "2021"
 authors = ["larpios"]
 description = "Safe Remove (srm): Move files to a safe location instead of deleting them immediately."
-license = "MIT"
+license = "MIT" 
 repository = "https://github.com/larpios/srm"
+include = [
+    "daemon/*",
+    "install.sh"
+]
 
 [dependencies]
 chrono = { version = "0.4", features = ["serde"] }
